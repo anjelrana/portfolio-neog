@@ -25,7 +25,12 @@ hr {
     width: 70vw;
     border-width: 0.5px;
     color: rgb(236, 233, 233);
+    margin: 2rem 0;
 }
+ p {
+     align-items: justify;
+     font-weight: normal;
+ }
 
 /* container */
 
@@ -95,11 +100,21 @@ hr {
 
 .list {
     list-style-type: none;
+    text-align-last: center;   
 }
 .list-inline {
     display: inline;  
     font-weight: 300;
-    margin: 0  1.5rem;    
+    margin: 0  1.5rem; 
+    line-height: 2;
+    
+}
+
+.list-inline-bold-hov {
+    font-weight: 500;
+}
+.list-inline-bold-hov:hover {
+    color: var(--shadow-color, red);
 }
 
 /* navigation  */
@@ -109,16 +124,17 @@ hr {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 8rem;
     position: sticky;
     top:0px;
     transition: padding 0.3s, background-color 1.5s, border-bottom 1s;
     background-color: #FFFEFC ;
-    
+    border-bottom: 1px lightgray solid;
+    z-index: 100;
 
 }
 .navigation:hover {
- padding:0 5rem;
+ padding:0rem 8rem;
  background-color:#F1F5F9;
  border-bottom: 1px gray solid;
 }
@@ -133,6 +149,7 @@ hr {
 }
 .navigation-logo {
     height:100px;
+    width:150px;
 }
 
 /* header */
@@ -144,6 +161,7 @@ hr {
 .hero-image {
     width: 60vw;
     height: auto;
+    margin: auto;
 }
 .hero-heading {
     font-weight:800;
@@ -163,6 +181,7 @@ hr {
 .section {
     display: flex;
     flex-direction: column;
+    margin: 4rem 0;
     
 }
 
@@ -173,11 +192,21 @@ hr {
     justify-content: space-between;
     margin:0 4rem;
 }
+.section-title-reverse {
+    flex-flow: row-reverse wrap;
+    text-align: end;
+}
 .section-title-image {
     height: 15rem;
     width: auto;
     position:absolute;
-    right: 5rem;
+    right: 1rem;
+    top: -3rem;
+    
+}
+.section-title-image-reverse {
+    position:absolute;
+    left: 1rem;
     top: -3rem;
     
 }
@@ -192,19 +221,31 @@ hr {
     font-size: 1.5rem;
     color: var(--sub-heading-color,gray);
 }
+.section-title-subheading-reverse ,.section-title-heading-reverse {
+    text-align: end;
+}
 
 .section-info {
     margin:1rem 4rem;
     border-radius: 1px solid var(--sub-heading-color,lightgrey);
     box-shadow: 1px 1px 5px lightgrey, -1px -1px 5px lightgrey;
-    height: 10vh;
+    
     padding: 3rem;
     background-color:#FFFEFC ;
     position: relative;
     z-index: 10;
+    
+}
+.section-info-reverse {
+    
+    text-align: right;
+    
 }
 .section-info:hover {
     box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+}
+.section a {
+    margin:0rem;
 }
 
 /* footer  */
@@ -212,7 +253,7 @@ hr {
 .footer {
  background-color: var(--footer-background, black);
  margin: 1rem 0 0 ;
- height: 30vh;
+ height: 20vh;
  color:white;
  padding: 5rem;
  display: flex;
