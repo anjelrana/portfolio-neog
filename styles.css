@@ -99,6 +99,9 @@ hr {
     left: 3px;
     box-shadow: 0 0 0 0 transparent;
 }
+.link-read {
+    color: rebeccapurple;
+}
 
 /* list */
 
@@ -156,9 +159,12 @@ hr {
 .navigation-link-active {
  font-weight: 700;
 }
+.navigation-link {
+    padding: 0.5rem 0.8rem;
+}
 .navigation-link:hover {
   background: lightgray;
-  padding: 1rem;
+  
   border-radius: 0.3rem;
 }
 .navigation-logo {
@@ -287,4 +293,13 @@ hr {
 
 .footer-image {
     filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(147deg) brightness(123%) contrast(94%);
+}
+
+/* blog  */
+
+.blog-text {
+    font-size: 1.2rem;
+    color: var(--sub-heading-color, gray);
+    line-height: 1.2;
+
 }
