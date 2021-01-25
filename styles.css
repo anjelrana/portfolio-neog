@@ -45,6 +45,10 @@ hr {
     text-decoration: none;
     color:black;
 }
+.link-underline {
+    text-decoration:underline purple 2px;
+
+}
 
 .primary-link {
     display: inline-block;
@@ -115,6 +119,16 @@ hr {
 }
 .list-inline-bold-hov:hover {
     color: var(--shadow-color, red);
+}
+.list-ordered {
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+.list-project {
+    list-style-type: lower-roman;
+    color:var(--sub-heading-color, gray);
+    font-weight: 400;
 }
 
 /* navigation  */
